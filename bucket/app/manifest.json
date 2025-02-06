@@ -5,7 +5,7 @@
   "description": "Conteúdo cristão para leigos e líderes.",
   "version": "1.0",
   "dir": "auto",
-  "lang": "pt-BR",
+  "lang": "en-US",
   "orientation": "any",
   "start_url": "/?utm_source=homescreen",
   "scope": "/",
