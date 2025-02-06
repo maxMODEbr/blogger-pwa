@@ -31,7 +31,7 @@ export type Config = {
   shortName: string;
   description: string;
   direction?: 'auto' | 'ltr' | 'rtl';
-  language?: 'en-US' | 'pt-BR';
+  language?: 'en-US';
   backgroundColor?: `#${string}`;
   themeColor?: `#${string}`;
   display?: 'fullscreen' | 'standalone' | 'minimal-ui' | 'browser';
