@@ -2,7 +2,7 @@
   "name": "Semeando Vida",
   "id": "/",
   "short_name": "SemeandoVida",
-  "description": "Conteúdo cristão para leigos e líderes.",
+  "description": "Instale o Semeando Vida na tela inicial de seu celular! Acesso rápido!",
   "version": "1.0",
   "dir": "auto",
   "lang": "en-US",
@@ -156,6 +156,30 @@
       "short_name": "Bíblia",
       "description": "Acesse Bíblia em detalhes",
       "url": "https://www.semeandovida.org/2023/05/guia-de-estudo-pessoal-da-biblia.html",
+      "icons": [
+        {
+          "src": "icons/android-chrome-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Sermões",
+      "short_name": "Sermões",
+      "description": "Acesse Sermões",
+      "url": "https://www.semeandovida.org/search/label/serm%C3%A3o",
+      "icons": [
+        {
+          "src": "icons/android-chrome-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Séries Teológicas",
+      "short_name": "Séries",
+      "description": "Acesse Séries Teológicas",
+      "url": "https://www.semeandovida.org/search/label/s%C3%A9rie",
       "icons": [
         {
           "src": "icons/android-chrome-96x96.png",
