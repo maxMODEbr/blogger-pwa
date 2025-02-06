@@ -1,11 +1,11 @@
 import type { Config } from './types';
 
 export default {
-  version: '1.1',
+  version: '2.0',
   id: '/',
   name: 'Semeando Vida',
   shortName: 'SemeandoVida',
-  description: 'Instale o Semeando Vida na tela inicial de seu celular! Acesso rápido!',
+  description: 'Instale o Semeando Vida na tela inicial de seu celular!',
   direction: 'auto',
   language: 'en-US',
   backgroundColor: '#fff',
