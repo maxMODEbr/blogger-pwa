@@ -5,7 +5,7 @@ export default {
   id: '/',
   name: 'Semeando Vida',
   shortName: 'SemeandoVida',
-  description: 'Conteúdo cristão para leigos e líderes.',
+  description: 'Instale o Semeando Vida na tela inicial de seu celular! Acesso rápido!',
   direction: 'auto',
   language: 'en-US',
   backgroundColor: '#fff',
@@ -41,7 +41,19 @@ export default {
       description: 'Acesse Bíblia em detalhes',
       url: 'https://www.semeandovida.org/2023/05/guia-de-estudo-pessoal-da-biblia.html',
     },
-  ],
+    {
+      name: 'Sermões',
+      shortName: 'Sermões',
+      description: 'Acesse Sermões',
+      url: 'https://www.semeandovida.org/search/label/serm%C3%A3o',
+    },
+    {
+      name: 'Séries Teológicas',
+      shortName: 'Séries',
+      description: 'Acesse Séries Teológicas',
+      url: 'https://www.semeandovida.org/search/label/s%C3%A9rie',
+    },
+      ],
   pwa: {
     logs: true,
     // OneSignal is not available if you are not using cloudflare workers
