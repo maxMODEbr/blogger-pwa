@@ -53,7 +53,7 @@ export default {
       description: 'Acesse Séries Teológicas',
       url: 'https://www.semeandovida.org/search/label/s%C3%A9rie',
     },
-      ],
+  ],
   pwa: {
     logs: true,
     // OneSignal is not available if you are not using cloudflare workers
