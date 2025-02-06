@@ -7,7 +7,7 @@ export default {
   shortName: 'SemeandoVida',
   description: 'Conteúdo cristão para leigos e líderes.',
   direction: 'auto',
-  language: 'pt-BR',
+  language: 'en-US',
   backgroundColor: '#fff',
   themeColor: '#fff',
   display: 'standalone',
