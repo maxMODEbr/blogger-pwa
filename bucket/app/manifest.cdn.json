@@ -1,14 +1,14 @@
 {
-  "name": "My Blog",
+  "name": "Semeando Vida",
   "id": "/",
-  "short_name": "My Blog",
-  "description": "My blog description goes here...",
+  "short_name": "SemeandoVida",
+  "description": "Conteúdo cristão para leigos e líderes.",
   "version": "1.0",
   "dir": "auto",
-  "lang": "en-US",
+  "lang": "pt-BR",
   "orientation": "any",
-  "start_url": "https://hello-example.blogspot.com/?utm_source=homescreen",
-  "scope": "https://hello-example.blogspot.com/",
+  "start_url": "https://www.semeandovida.org/?utm_source=homescreen",
+  "scope": "https://www.semeandovida.org/",
   "display": "standalone",
   "prefer_related_applications": false,
   "background_color": "#fff",
@@ -116,10 +116,10 @@
   ],
   "shortcuts": [
     {
-      "name": "Shortcut 1",
-      "short_name": "Shortcut 1",
-      "description": "Shortcut 1 description goes here...",
-      "url": "https://hello-example.blogspot.com/search/label/shortcut-1?utm_source=homescreen",
+      "name": "Hinário",
+      "short_name": "Hinos",
+      "description": "Acesse o Hinário",
+      "url": "https://www.semeandovida.org/2011/08/historia-por-tras-dos-hinos_26.html",
       "icons": [
         {
           "src": "icons/android-chrome-96x96.png",
@@ -128,10 +128,34 @@
       ]
     },
     {
-      "name": "Shortcut 2",
-      "short_name": "Shortcut 2",
-      "description": "Shortcut 2 description goes here...",
-      "url": "https://hello-example.blogspot.com/search/label/shortcut-2?utm_source=homescreen",
+      "name": "Devocionais",
+      "short_name": "Devocionais",
+      "description": "Acesse Devocionais",
+      "url": "https://www.semeandovida.org/2023/05/1300-devocionais-cristas.html",
+      "icons": [
+        {
+          "src": "icons/android-chrome-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Estudos Bíblicos",
+      "short_name": "Estudos",
+      "description": "Acesse Estudos Bíblicos",
+      "url": "https://www.semeandovida.org/2012/05/estudos-biblicos-para-download.html",
+      "icons": [
+        {
+          "src": "icons/android-chrome-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Explore a Bíblia",
+      "short_name": "Bíblia",
+      "description": "Acesse Bíblia em detalhes",
+      "url": "https://www.semeandovida.org/2023/05/guia-de-estudo-pessoal-da-biblia.html",
       "icons": [
         {
           "src": "icons/android-chrome-96x96.png",
