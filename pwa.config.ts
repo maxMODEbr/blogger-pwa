@@ -1,7 +1,7 @@
 import type { Config } from './types';
 
 export default {
-  version: '1.0',
+  version: '1.1',
   id: '/',
   name: 'Semeando Vida',
   shortName: 'SemeandoVida',
