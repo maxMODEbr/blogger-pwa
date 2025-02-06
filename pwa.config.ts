@@ -3,11 +3,11 @@ import type { Config } from './types';
 export default {
   version: '1.0',
   id: '/',
-  name: 'My Blog',
-  shortName: 'My Blog',
-  description: 'My blog description goes here...',
+  name: 'Semeando Vida',
+  shortName: 'SemeandoVida',
+  description: 'Conteúdo cristão para leigos e líderes.',
   direction: 'auto',
-  language: 'en-US',
+  language: 'pt-BR',
   backgroundColor: '#fff',
   themeColor: '#fff',
   display: 'standalone',
@@ -18,16 +18,28 @@ export default {
   preferRelatedApplications: false,
   shortcuts: [
     {
-      name: 'Shortcut 1',
-      shortName: 'Shortcut 1',
-      description: 'Shortcut 1 description goes here...',
-      url: '/search/label/shortcut-1?utm_source=homescreen',
+      name: 'Hinário',
+      shortName: 'Hinos',
+      description: 'Acesse o Hinário',
+      url: 'https://www.semeandovida.org/2011/08/historia-por-tras-dos-hinos_26.html',
     },
     {
-      name: 'Shortcut 2',
-      shortName: 'Shortcut 2',
-      description: 'Shortcut 2 description goes here...',
-      url: '/search/label/shortcut-2?utm_source=homescreen',
+      name: 'Devocionais',
+      shortName: 'Devocionais',
+      description: 'Acesse Devocionais',
+      url: 'https://www.semeandovida.org/2023/05/1300-devocionais-cristas.html',
+    },
+    {
+      name: 'Estudos Bíblicos',
+      shortName: 'Estudos',
+      description: 'Acesse Estudos Bíblicos',
+      url: 'https://www.semeandovida.org/2012/05/estudos-biblicos-para-download.html',
+    },
+    {
+      name: 'Explore a Bíblia',
+      shortName: 'Bíblia',
+      description: 'Acesse Bíblia em detalhes',
+      url: 'https://www.semeandovida.org/2023/05/guia-de-estudo-pessoal-da-biblia.html',
     },
   ],
   pwa: {
@@ -40,5 +52,5 @@ export default {
     },
   },
   // Please replace with your blog url if you are using CDN (JsDelivr)
-  origin: 'https://hello-example.blogspot.com',
+  origin: 'https://www.semeandovida.org',
 } satisfies Config;
