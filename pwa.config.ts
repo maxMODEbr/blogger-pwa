@@ -7,7 +7,7 @@ export default {
   shortName: 'SemeandoVida',
   description: 'Instale o Semeando Vida na tela inicial de seu celular!',
   direction: 'auto',
-  language: 'en-US',
+  language: 'pt-BR',
   backgroundColor: '#fff',
   themeColor: '#fff',
   display: 'standalone',
@@ -56,13 +56,11 @@ export default {
   ],
   pwa: {
     logs: true,
-    // OneSignal is not available if you are not using cloudflare workers
     oneSignalEnabled: false,
     oneSignalConfig: {
       appId: '********-****-****-****-************',
       allowLocalhostAsSecureOrigin: true,
     },
   },
-  // Please replace with your blog url if you are using CDN (JsDelivr)
   origin: 'https://www.semeandovida.org',
-} satisfies Config; 
+} satisfies Config;
