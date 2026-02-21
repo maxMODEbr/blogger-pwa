@@ -65,4 +65,4 @@ export default {
   },
   // Please replace with your blog url if you are using CDN (JsDelivr)
   origin: 'https://www.semeandovida.org',
-} satisfies Config;
+} satisfies Config; 
