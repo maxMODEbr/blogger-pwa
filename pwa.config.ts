@@ -7,7 +7,7 @@ export default {
   shortName: 'SemeandoVida',
   description: 'Instale o Semeando Vida na tela inicial de seu celular!',
   direction: 'auto',
-  language: 'pt-BR',
+  language: 'en-US',
   backgroundColor: '#fff',
   themeColor: '#fff',
   display: 'standalone',
