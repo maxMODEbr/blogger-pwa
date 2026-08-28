@@ -1,15 +1,15 @@
 import type { Config } from './types';
 
 export default {
-  version: '2.1',
+  version: '2.2',
   id: '/',
   name: 'Semeando Vida',
   shortName: 'SemeandoVida',
   description: 'Instale o Semeando Vida na tela inicial de seu celular!',
   direction: 'auto',
-  language: 'pt-BR',
-  backgroundColor: '#ffffff',
-  themeColor: '#ffffff',
+  language: 'en-US',
+  backgroundColor: '#fff',
+  themeColor: '#fff',
   display: 'standalone',
   orientation: 'any',
   scope: '/',
@@ -19,21 +19,21 @@ export default {
   shortcuts: [
     {
       name: 'Hinário',
-      shortName: 'Hinos',
-      description: 'Abrir Hinário',
-      url: '/2025/12/hinario-presbiteriano-novo-cantico-completo.html?utm_source=shortcut',
+      shortName: 'Hinário',
+      description: 'Acesse o Hinário Novo Cântico',
+      url: 'https://www.semeandovida.org/2025/12/hinario-presbiteriano-novo-cantico-completo.html',
     },
     {
-      name: 'Busca',
-      shortName: 'Buscar',
+      name: 'Busca Universal',
+      shortName: 'Busca',
       description: 'Buscar hinos, estudos e devocionais',
-      url: '/p/busca.html?utm_source=shortcut',
+      url: 'https://www.semeandovida.org/p/busca.html',
     },
     {
       name: 'Páginas Salvas',
       shortName: 'Salvos',
       description: 'Seus textos salvos para ler depois',
-      url: '/p/paginas-salvas.html?utm_source=shortcut',
+      url: 'https://www.semeandovida.org/p/paginas-salvas.html',
     },
   ],
   pwa: {
