@@ -3,7 +3,7 @@
   "id": "/",
   "short_name": "SemeandoVida",
   "description": "Instale o Semeando Vida na tela inicial de seu celular!",
-  "version": "2.0",
+  "version": "2.2",
   "dir": "auto",
   "lang": "en-US",
   "orientation": "any",
@@ -117,9 +117,9 @@
   "shortcuts": [
     {
       "name": "Hinário",
-      "short_name": "Hinos",
-      "description": "Acesse o Hinário",
-      "url": "https://www.semeandovida.org/2011/08/historia-por-tras-dos-hinos_26.html",
+      "short_name": "Hinário",
+      "description": "Acesse o Hinário Novo Cântico",
+      "url": "https://www.semeandovida.org/2025/12/hinario-presbiteriano-novo-cantico-completo.html",
       "icons": [
         {
           "src": "icons/android-chrome-96x96.png",
@@ -128,10 +128,10 @@
       ]
     },
     {
-      "name": "Devocionais",
-      "short_name": "Devocionais",
-      "description": "Acesse Devocionais",
-      "url": "https://www.semeandovida.org/2023/05/1300-devocionais-cristas.html",
+      "name": "Busca Universal",
+      "short_name": "Busca",
+      "description": "Buscar hinos, estudos e devocionais",
+      "url": "https://www.semeandovida.org/p/busca.html",
       "icons": [
         {
           "src": "icons/android-chrome-96x96.png",
@@ -140,46 +140,10 @@
       ]
     },
     {
-      "name": "Estudos Bíblicos",
-      "short_name": "Estudos",
-      "description": "Acesse Estudos Bíblicos",
-      "url": "https://www.semeandovida.org/2012/05/estudos-biblicos-para-download.html",
-      "icons": [
-        {
-          "src": "icons/android-chrome-96x96.png",
-          "sizes": "96x96"
-        }
-      ]
-    },
-    {
-      "name": "Explore a Bíblia",
-      "short_name": "Bíblia",
-      "description": "Acesse Bíblia em detalhes",
-      "url": "https://www.semeandovida.org/2023/05/guia-de-estudo-pessoal-da-biblia.html",
-      "icons": [
-        {
-          "src": "icons/android-chrome-96x96.png",
-          "sizes": "96x96"
-        }
-      ]
-    },
-    {
-      "name": "Sermões",
-      "short_name": "Sermões",
-      "description": "Acesse Sermões",
-      "url": "https://www.semeandovida.org/search/label/serm%C3%A3o",
-      "icons": [
-        {
-          "src": "icons/android-chrome-96x96.png",
-          "sizes": "96x96"
-        }
-      ]
-    },
-    {
-      "name": "Séries Teológicas",
-      "short_name": "Séries",
-      "description": "Acesse Séries Teológicas",
-      "url": "https://www.semeandovida.org/search/label/s%C3%A9rie",
+      "name": "Páginas Salvas",
+      "short_name": "Salvos",
+      "description": "Seus textos salvos para ler depois",
+      "url": "https://www.semeandovida.org/p/paginas-salvas.html",
       "icons": [
         {
           "src": "icons/android-chrome-96x96.png",
