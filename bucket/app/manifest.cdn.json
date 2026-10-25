@@ -3,7 +3,7 @@
   "id": "/",
   "short_name": "SemeandoVida",
   "description": "Instale o Semeando Vida na tela inicial de seu celular!",
-  "version": "2.2",
+  "version": "2.3",
   "dir": "auto",
   "lang": "en-US",
   "orientation": "any",
