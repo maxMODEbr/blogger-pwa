@@ -2,7 +2,7 @@ import { cacheNames, clientsClaim, setCacheNameDetails, skipWaiting } from 'work
 import { ExpirationPlugin } from 'workbox-expiration';
 import { precacheAndRoute } from 'workbox-precaching';
 import { registerRoute, setCatchHandler, setDefaultHandler } from 'workbox-routing';
-import { CacheFirst, NetworkOnly } from 'workbox-strategies';
+import { CacheFirst, NetworkFirst, NetworkOnly } from 'workbox-strategies';
 
 declare const self: ServiceWorkerGlobalScope;
 
@@ -10,7 +10,7 @@ declare const self: ServiceWorkerGlobalScope;
 const config = {
   app: {
     name: 'blogger-pwa',
-    version: 'v1',
+    version: 'v2',
     precache: 'install-time',
     runtime: 'run-time',
   },
@@ -38,8 +38,26 @@ setDefaultHandler(new NetworkOnly());
 
 const version = cacheNames.suffix;
 
+// 1. Salva automaticamente páginas navegadas (Hinos, Estudos e Artigos) para leitura offline
 registerRoute(
-  /.(?:css|js|png|gif|jpg|svg|ico)$/,
+  ({ request }) => request.destination === 'document',
+  new NetworkFirst({
+    cacheName: `pages-cache-${version}`,
+    networkTimeoutSeconds: 3,
+    plugins: [
+      new ExpirationPlugin({
+        maxAgeSeconds: 30 * 24 * 60 * 60, // Guarda por 30 dias na memória do aparelho
+        maxEntries: 100, // Armazena até 100 páginas recentemente lidas
+        purgeOnQuotaError: true,
+      }),
+    ],
+  }),
+  'GET',
+);
+
+// 2. Salva imagens (PNG, JPG, WebP), fontes e estilos em alta velocidade
+registerRoute(
+  /\.(?:css|js|png|gif|jpg|jpeg|svg|ico|webp|woff2)$/,
   new CacheFirst({
     cacheName: `images-js-css-${version}`,
     plugins: [
