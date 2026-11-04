@@ -24,7 +24,15 @@ const app = new Hono<HonoContext>()
         const response = await c.var.github.fetch(c.req.raw, {
           // Bypass cache in development environment
           // bypassCache: c.env.CF_ENV === 'local',
-          toAsset: (url) => `/bucket${url.pathname}`,
+toAsset: (url) => {
+            let p = url.pathname;
+            if (p.endsWith('/')) {
+              p += 'index.html';
+            } else if (!p.slice(p.lastIndexOf('/')).includes('.')) {
+              p += '/index.html';
+            }
+            return `/bucket${p}`;
+          },
           cacheKey(defaultKey) {
             const url = new URL(defaultKey.url);
             url.pathname = `__cache_build_${metadata.build.hash}__${url.pathname}`;
