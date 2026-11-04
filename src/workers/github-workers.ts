@@ -9,6 +9,16 @@ type HonoContext = {
   };
 };
 
+const getAssetPath = (pathname: string) => {
+  if (pathname.endsWith('/')) {
+    return `/bucket${pathname}index.html`;
+  }
+  if (!pathname.slice(pathname.lastIndexOf('/')).includes('.')) {
+    return `/bucket${pathname}/index.html`;
+  }
+  return `/bucket${pathname}`;
+};
+
 const app = new Hono<HonoContext>()
   .use(async (c, next) => {
     const github = new GithubAssets(c.executionCtx, metadata.github.repository, metadata.github.branch);
@@ -22,17 +32,7 @@ const app = new Hono<HonoContext>()
       case 'GET':
       case 'HEAD': {
         const response = await c.var.github.fetch(c.req.raw, {
-          // Bypass cache in development environment
-          // bypassCache: c.env.CF_ENV === 'local',
-toAsset: (url) => {
-            let p = url.pathname;
-            if (p.endsWith('/')) {
-              p += 'index.html';
-            } else if (!p.slice(p.lastIndexOf('/')).includes('.')) {
-              p += '/index.html';
-            }
-            return `/bucket${p}`;
-          },
+          toAsset: (url) => getAssetPath(url.pathname),
           cacheKey(defaultKey) {
             const url = new URL(defaultKey.url);
             url.pathname = `__cache_build_${metadata.build.hash}__${url.pathname}`;
@@ -41,7 +41,6 @@ toAsset: (url) => {
           etag: `build_${metadata.build.hash}_${new URL(c.req.url).pathname}`,
         });
         if (response) {
-          // Set Service-Worker-Allowed header if asset is serviceworker.js
           if (/\/(service-?worker.js|sw.js)/.test(c.req.url)) {
             response.headers.set('Service-Worker-Allowed', '/');
           }
